@@ -1,0 +1,27 @@
+{
+  "name": "cypress-testing-project",
+  "version": "1.0.0",
+  "description": "Automation software testing with Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JelenaMarjanovic/cypress-testing-project.git"
+  },
+  "keywords": [
+    "testing",
+    "cypress",
+    "automation"
+  ],
+  "author": "Jelena Marjanovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JelenaMarjanovic/cypress-testing-project/issues"
+  },
+  "homepage": "https://github.com/JelenaMarjanovic/cypress-testing-project#readme",
+  "dependencies": {
+    "cypress": "^5.2.0"
+  }
+}
