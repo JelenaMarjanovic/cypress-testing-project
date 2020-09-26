@@ -1,1 +1,1 @@
-# cypress-testing-project
+# [Udemy] Automated Software Testing with Cypress [2020] by Kaniel Outis
