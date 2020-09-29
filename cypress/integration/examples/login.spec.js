@@ -18,6 +18,13 @@ describe('Working with inputs', () => {
     cy.get('#user_password').type('Some Invalid Password', { delay: 50 });
   });
 
+  it('should mark checkbox', () => {
+    cy.get('input[type="checkbox"]').click();
+
+    // Just for the sake of demonstration, let's wait 3s before submitting
+    cy.wait(3000);
+  });
+
   it('should submit login form', () => {
     cy.contains('Sign in').click();
   });
