@@ -3,6 +3,12 @@ describe('Browser Actions', () => {
     cy.visit('http://books.toscrape.com/index.html', { timeout: 10000 });
 
     cy.url().should('include', 'index.html');
+
+    cy.log('Before Reload');
+
+    cy.reload();
+
+    cy.log('After Reload');
   });
 
   it('should click on Travel category', () => {
