@@ -1,4 +1,12 @@
 describe('Working with inputs', () => {
+  it('should override the current time', () => {
+    const date = new Date(2020, 3, 1).getTime(); // return a timestamp
+
+    cy.clock(date);
+
+    cy.log(date);
+  });
+
   it('should load login page', () => {
     cy.visit('http://zero.webappsecurity.com/login.html');
 
