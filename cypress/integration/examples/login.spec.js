@@ -7,15 +7,19 @@ describe('Working with inputs', () => {
   });
 
   it('should fill username', () => {
-    cy.get('#user_login').clear();
+    cy.get('#user_login').as('username');
 
-    cy.get('#user_login').type('Some Invalid Name', { delay: 50 });
+    cy.get('@username').clear();
+
+    cy.get('@username').type('Some Invalid Name', { delay: 50 });
   });
 
   it('should fill password', () => {
-    cy.get('#user_password').clear();
+    cy.get('#user_password').as('password');
 
-    cy.get('#user_password').type('Some Invalid Password', { delay: 50 });
+    cy.get('@password').clear();
+
+    cy.get('@password').type('Some Invalid Password', { delay: 50 });
   });
 
   it('should mark checkbox', () => {
