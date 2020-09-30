@@ -4,6 +4,12 @@ describe('Working with inputs', () => {
 
     // Verify that we landed on the correct page
     cy.url().should('include', 'login.html');
+
+    // Clear Cookies
+    cy.clearCookies({ log: true });
+
+    // Clear Local Storage
+    cy.clearLocalStorage('your item', { log: true });
   });
 
   it('should fill username', () => {
