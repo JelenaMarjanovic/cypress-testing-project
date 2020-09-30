@@ -20,6 +20,10 @@ describe('Working with inputs', () => {
     cy.clearLocalStorage('your item', { log: true });
   });
 
+  it('should check if the correct page title is appearing on the browser tab', () => {
+    cy.title().should('include', 'Zero - Log in');
+  });
+
   it('should fill username', () => {
     cy.get('#user_login').as('username');
 
