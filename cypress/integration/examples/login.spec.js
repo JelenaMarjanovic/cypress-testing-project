@@ -1,4 +1,4 @@
-describe('Working with inputs', () => {
+describe('Working with Inputs', () => {
   it('should override the current time', () => {
     const date = new Date(2020, 3, 1).getTime(); // return a timestamp
 

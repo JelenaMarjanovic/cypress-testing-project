@@ -1,4 +1,4 @@
-describe('Keyboard press simulation', () => {
+describe('Keyboard Press Simulation', () => {
   it('should submit search-box with pressing enter', () => {
     cy.visit('http://zero.webappsecurity.com/index.html');
 
