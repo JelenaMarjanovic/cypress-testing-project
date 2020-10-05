@@ -6,4 +6,8 @@ describe('Write / Read Data to / from JSON / Text File', () => {
   it('should write data to the text file', () => {
     cy.writeFile('log.txt', 'Hello world!');
   });
+
+  it('should read and verify data from JSON', () => {
+    cy.readFile('log.json').its('age').should('eq', 25);
+  });
 });
