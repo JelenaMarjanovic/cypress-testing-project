@@ -41,7 +41,27 @@ describe('Abstraction with Classes', () => {
     // runs after each it block in the describe
   });
 
-  it('should scroll down and up on the page', () => {
+  it.skip('should scroll down and up on the page - 1st IT block', () => {
+    HomePage.scrollToBottom();
+
+    HomePage.wait(5000);
+
+    HomePage.scrollToTop();
+
+    HomePage.wait(3000);
+  });
+
+  it('should scroll down and up on the page - 2nd IT block', () => {
+    HomePage.scrollToBottom();
+
+    HomePage.wait(5000);
+
+    HomePage.scrollToTop();
+
+    HomePage.wait(3000);
+  });
+
+  it('should scroll down and up on the page - 3rd IT block', () => {
     HomePage.scrollToBottom();
 
     HomePage.wait(5000);
