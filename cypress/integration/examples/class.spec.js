@@ -51,7 +51,7 @@ describe('Abstraction with Classes', () => {
     HomePage.wait(3000);
   });
 
-  it('should scroll down and up on the page - 2nd IT block', () => {
+  it.only('should scroll down and up on the page - 2nd IT block', () => {
     HomePage.scrollToBottom();
 
     HomePage.wait(5000);
