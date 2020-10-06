@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/JelenaMarjanovic/cypress-testing-project#readme",
   "dependencies": {
-    "cypress": "^5.2.0"
+    "cypress": "^5.2.0",
+    "cypress-xpath": "^1.6.0"
   }
 }
