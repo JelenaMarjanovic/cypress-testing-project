@@ -24,5 +24,8 @@
   "homepage": "https://github.com/JelenaMarjanovic/cypress-testing-project#readme",
   "dependencies": {
     "cypress": "^5.2.0"
+  },
+  "devDependencies": {
+    "cypress-dark": "^1.7.14"
   }
 }
